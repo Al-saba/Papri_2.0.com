@@ -34,12 +34,11 @@
 				<div class="atf-preloader__spinner"></div>
 				<!-- Brand Text -->
 				<div class="atf-preloader__text">
-					<span class="atf-preloader__letter" data-letter="L">L</span>
-					<span class="atf-preloader__letter" data-letter="U">U</span>
-					<span class="atf-preloader__letter" data-letter="X">X</span>
-					<span class="atf-preloader__letter" data-letter="O">O</span>
-					<span class="atf-preloader__letter" data-letter="R">R</span>
+					<span class="atf-preloader__letter" data-letter="P">P</span>
 					<span class="atf-preloader__letter" data-letter="A">A</span>
+					<span class="atf-preloader__letter" data-letter="P">P</span>
+					<span class="atf-preloader__letter" data-letter="R">R</span>
+					<span class="atf-preloader__letter" data-letter="I">I</span>
 				</div>	
 				<!-- Loading Text -->
 				<p class="atf-preloader__loading text-center">Loading...</p>	
@@ -149,7 +148,6 @@
 												<li><a href="service.html#agriculture">Agriculture &amp; Rural Development</a></li>
 												<li><a href="service.html#health">Healthcare &amp; Sanitation</a></li>
 												<li><a href="service.html#women">Women Empowerment</a></li>
-												<li><a href="service.html#humanitarian">Humanitarian Support</a></li>
 												<li><a href="service.html#research">Research &amp; Development</a></li>
 											</ul>
 										</li>
@@ -225,16 +223,82 @@
             <div class="col-xxl-4 col-xl-4 col-lg-4 mb-lg-40">
                 <div class="sidebar-wrapper">
                     <div class="sidebar-widget">
-                        <div class="sidebar-widget-content text-start">
-                            <ul>
-                                <li><a href="service-details.html#skill">PAPRI Skill Development Centre</a></li>
-                                <li><a href="service-details.html#mayer">Mayer School</a></li>
-                                <li><a href="blog.html">Ongoing Projects</a></li>
-                                <li><a href="service.html">Our Seven Work Areas</a></li>
-                                <li><a href="client.html">Get Involved</a></li>
-                            </ul>
+                        <div class="sidebar-widget-content text-start sidebar-link-cards">
+                            <a href="service-details.html#skill" class="sidebar-link-card">
+                                <span class="sidebar-link-card-icon"><i class="fa-light fa-graduation-cap"></i></span>
+                                <span class="sidebar-link-card-text">PAPRI Skill Development Centre</span>
+                                <span class="sidebar-link-card-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </a>
+                            <a href="service-details.html#mayer" class="sidebar-link-card">
+                                <span class="sidebar-link-card-icon"><i class="fa-light fa-book-open"></i></span>
+                                <span class="sidebar-link-card-text">Mayer School</span>
+                                <span class="sidebar-link-card-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </a>
+                            <a href="blog.html" class="sidebar-link-card">
+                                <span class="sidebar-link-card-icon"><i class="fa-light fa-diagram-project"></i></span>
+                                <span class="sidebar-link-card-text">Ongoing Projects</span>
+                                <span class="sidebar-link-card-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </a>
+                            <a href="service.html" class="sidebar-link-card">
+                                <span class="sidebar-link-card-icon"><i class="fa-light fa-layer-group"></i></span>
+                                <span class="sidebar-link-card-text">Our Six Work Areas</span>
+                                <span class="sidebar-link-card-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </a>
+                            <a href="client.html" class="sidebar-link-card">
+                                <span class="sidebar-link-card-icon"><i class="fa-light fa-people-group"></i></span>
+                                <span class="sidebar-link-card-text">Get Involved</span>
+                                <span class="sidebar-link-card-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                            </a>
                         </div>
                     </div>
+                    <style>
+                        .sidebar-link-cards { display: flex; flex-direction: column; gap: 14px; }
+                        .sidebar-link-card {
+                            display: flex;
+                            align-items: center;
+                            gap: 14px;
+                            background: var(--bg-white);
+                            border: 1px solid rgba(13,13,13,0.08);
+                            border-radius: 14px;
+                            padding: 18px 20px;
+                            box-shadow: 0 6px 20px rgba(13,13,13,0.05);
+                            text-decoration: none;
+                            transition: all 0.3s ease;
+                        }
+                        .sidebar-link-card:hover {
+                            border-color: var(--primary);
+                            box-shadow: 0 10px 28px rgba(255,88,51,0.16);
+                            transform: translateY(-2px);
+                        }
+                        .sidebar-link-card-icon {
+                            flex-shrink: 0;
+                            width: 44px;
+                            height: 44px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(255,88,51,0.1);
+                            color: var(--primary);
+                            border-radius: 10px;
+                            font-size: 18px;
+                        }
+                        .sidebar-link-card-text {
+                            flex-grow: 1;
+                            font-weight: 600;
+                            font-size: 15px;
+                            color: var(--text-dark);
+                        }
+                        .sidebar-link-card-arrow {
+                            flex-shrink: 0;
+                            color: var(--text-light);
+                            font-size: 15px;
+                            transition: all 0.3s ease;
+                        }
+                        .sidebar-link-card:hover .sidebar-link-card-arrow {
+                            color: var(--primary);
+                            transform: translate(2px,-2px);
+                        }
+                    </style>
 
                     <div class="sidebar-widget">
                         <h3 class="sidebar-widget-title mb-30 text-start">Want to Know More?</h3>
@@ -418,7 +482,6 @@
 								<li><a href="service.html#agriculture">Agriculture</a></li>
 								<li><a href="service.html#health">Healthcare</a></li>
 								<li><a href="service.html#women">Women Empowerment</a></li>
-								<li><a href="service.html#humanitarian">Humanitarian Support</a></li>
 							</ul>
 						</div>
 					</div>
